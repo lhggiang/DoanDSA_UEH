@@ -73,6 +73,56 @@ namespace Dijkstra.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _110286 {
+            get {
+                object obj = ResourceManager.GetObject("110286", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1102861 {
+            get {
+                object obj = ResourceManager.GetObject("1102861", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1102862 {
+            get {
+                object obj = ResourceManager.GetObject("1102862", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1102863 {
+            get {
+                object obj = ResourceManager.GetObject("1102863", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1102864 {
+            get {
+                object obj = ResourceManager.GetObject("1102864", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1324532_removebg {
             get {
                 object obj = ResourceManager.GetObject("_1324532_removebg", resourceCulture);
@@ -83,9 +133,79 @@ namespace Dijkstra.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ban_do_mien_Bac_dang_PNG {
+            get {
+                object obj = ResourceManager.GetObject("Ban-do-mien-Bac-dang-PNG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hinh_nen_xanh_ngoc_2k_dep_cho_may_tinh_100606472 {
+            get {
+                object obj = ResourceManager.GetObject("hinh-nen-xanh-ngoc-2k-dep-cho-may-tinh_100606472", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hinh_nen_xanh_ngoc_2k_dep_cho_may_tinh_1006064721 {
+            get {
+                object obj = ResourceManager.GetObject("hinh-nen-xanh-ngoc-2k-dep-cho-may-tinh_1006064721", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("images_removebg_preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vintage_blue_europe_map_retro_background_based_image_furnished_nasa_159657999 {
+            get {
+                object obj = ResourceManager.GetObject("vintage-blue-europe-map-retro-background-based-image-furnished-nasa-159657999", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap world_map_concept_for_web_design_background_web_banner_printed_material_vector {
+            get {
+                object obj = ResourceManager.GetObject("world-map-concept-for-web-design-background-web-banner-printed-material-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap world_map_with_countries_on_blue_background_vector_1336799 {
+            get {
+                object obj = ResourceManager.GetObject("world-map-with-countries-on-blue-background-vector-1336799", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Worldwide_Express_Delivery_Icon_Graphics_8778747_2_580x386 {
+            get {
+                object obj = ResourceManager.GetObject("Worldwide-Express-Delivery-Icon-Graphics-8778747-2-580x386", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

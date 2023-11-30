@@ -96,5 +96,26 @@
   <ItemGroup>
     <None Include="Resources\04142915-ban-do-cac-tinh-mien-nam-removebg %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-nen-xanh-ngoc-2k-dep-cho-may-tinh_100606472.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world-map-concept-for-web-design-background-web-banner-printed-material-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world-map-with-countries-on-blue-background-vector-1336799.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vintage-blue-europe-map-retro-background-based-image-furnished-nasa-159657999.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Worldwide-Express-Delivery-Icon-Graphics-8778747-2-580x386.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\110286.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ban-do-mien-Bac-dang-PNG.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

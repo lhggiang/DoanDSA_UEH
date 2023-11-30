@@ -167,7 +167,7 @@ namespace Dijkstra
                 v = u;
             }
             double sl = km * 0.09;
-            int sd = km * 2043;
+            double sd = sl * 20000;
             count++;
             if (count >= countOfVertices)
             {

@@ -194,6 +194,5 @@ namespace Dijkstra
             Point point2 = new Point(g.pathIndex[i + 1].X, g.pathIndex[i + 1].Y);
             graph.DrawLine(p, point1, point2);
         }
-
     }
 }
