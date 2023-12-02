@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,56 +21,54 @@ namespace Dijkstra
         Graph g = new Graph();
         private void Form1_Load(object sender, EventArgs e)
         {
-            /*Province binhPhuoc = new Province("Bình Phước", "A", 600, 440);
-            Province saiGon = new Province("Sài Gòn", "B", 570, 550);
-            Province tayNinh = new Province("Tây Ninh", "C", 500, 480);
-            Province vungTau = new Province("Vũng Tàu", "D", 650, 580);
-            Province tienGiang = new Province("Tiền Giang", "E", 500, 590);
-            Province anGiang = new Province("An Giang", "F", 350, 590);
-            Province hauGiang = new Province("Hậu Giang", "G", 420, 670);
-            Province traVinh = new Province("Trà Vinh", "H", 530, 670);
-            Province kienGiang = new Province("Kiên Giang", "I", 350, 660);
-            Province caMau = new Province("Cà Mau", "K", 350, 750);*/
-            Province binhPhuoc = new Province("Bình Phước", "A", 541, 65);
-            Province saiGon = new Province("Sài Gòn", "B", 502, 164);
-            Province tayNinh = new Province("Tây Ninh", "C", 431, 105);
-            Province vungTau = new Province("Vũng Tàu", "D", 590, 198);
-            Province tienGiang = new Province("Tiền Giang", "E", 432, 212);
-            Province anGiang = new Province("An Giang", "F", 296, 210);
-            Province hauGiang = new Province("Hậu Giang", "G", 348, 286);
-            Province traVinh = new Province("Trà Vinh", "H", 462, 286);
-            Province kienGiang = new Province("Kiên Giang", "I", 290, 286);
-            Province caMau = new Province("Cà Mau", "K", 260, 345);
-            Provinces.Add(binhPhuoc);
-            Provinces.Add(saiGon);
-            Provinces.Add(tayNinh);
-            Provinces.Add(vungTau);
-            Provinces.Add(tienGiang);
-            Provinces.Add(anGiang);
-            Provinces.Add(hauGiang);
-            Provinces.Add(traVinh);
-            Provinces.Add(kienGiang);
-            Provinces.Add(caMau);
-            cbSource.Items.Add("Bình Phước");
-            cbSource.Items.Add("Sài Gòn");
-            cbSource.Items.Add("Tây Ninh");
-            cbSource.Items.Add("Vũng Tàu");
-            cbSource.Items.Add("Tiền Giang");
-            cbSource.Items.Add("An Giang");
-            cbSource.Items.Add("Hậu Giang");
-            cbSource.Items.Add("Trà Vinh");
-            cbSource.Items.Add("Kiên Giang");
-            cbSource.Items.Add("Cà Mau");
-            cbDestination.Items.Add("Bình Phước");
-            cbDestination.Items.Add("Sài Gòn");
-            cbDestination.Items.Add("Tây Ninh");
-            cbDestination.Items.Add("Vũng Tàu");
-            cbDestination.Items.Add("Tiền Giang");
-            cbDestination.Items.Add("An Giang");
-            cbDestination.Items.Add("Hậu Giang");
-            cbDestination.Items.Add("Trà Vinh");
-            cbDestination.Items.Add("Kiên Giang");
-            cbDestination.Items.Add("Cà Mau");
+            Province haGiang = new Province("Hà Giang", "A", 85, 140);
+            Province caoBang = new Province("Cao Bằng", "B", 225, 140);
+            Province tuyenQuang= new Province("Tuyên Quang", "C", 125, 220);
+            Province phuTho = new Province("Phú Thọ", "D", 113, 325); 
+            Province haNoi = new Province("Hà Nội", "E", 192, 370);
+            Province namDinh = new Province("Nam Định", "F",245, 455);
+            Province haiPhong = new Province("Hải Phòng", "G", 290, 395);
+            Province quangNinh = new Province("Quảng Ninh", "H",359, 351);
+            Province langSon = new Province("Lạng Sơn", "I", 283, 260);
+            Province banKan = new Province("Bắc Kạn", "K", 194, 205);
+            Province bacGiang = new Province("Bắc Giang", "A",275, 321);
+
+            Provinces.Add(haGiang);
+            Provinces.Add(caoBang);
+            Provinces.Add(tuyenQuang);
+            Provinces.Add(phuTho);
+            Provinces.Add(haNoi);
+            Provinces.Add(namDinh);
+            Provinces.Add(haiPhong);
+            Provinces.Add(quangNinh);
+            Provinces.Add(langSon); 
+            Provinces.Add(banKan);
+            Provinces.Add(bacGiang);
+
+            cbSource.Items.Add(haGiang.provinceName);
+            cbSource.Items.Add(caoBang.provinceName);
+            cbSource.Items.Add(tuyenQuang.provinceName);
+            cbSource.Items.Add(phuTho.provinceName);
+            cbSource.Items.Add(haNoi.provinceName);
+            cbSource.Items.Add(namDinh.provinceName );
+            cbSource.Items.Add(haiPhong.provinceName);
+            cbSource.Items.Add(quangNinh.provinceName);
+            cbSource.Items.Add(langSon.provinceName); 
+            cbSource.Items.Add(banKan.provinceName);
+            cbSource.Items.Add(bacGiang.provinceName);
+
+            cbDestination.Items.Add(haGiang.provinceName);
+            cbDestination.Items.Add(caoBang.provinceName);
+            cbDestination.Items.Add(tuyenQuang.provinceName);
+            cbDestination.Items.Add(phuTho.provinceName);
+            cbDestination.Items.Add(haNoi.provinceName);
+            cbDestination.Items.Add(namDinh.provinceName);
+            cbDestination.Items.Add(haiPhong.provinceName);
+            cbDestination.Items.Add(quangNinh.provinceName);
+            cbDestination.Items.Add(langSon.provinceName);
+            cbDestination.Items.Add(banKan.provinceName);
+            cbDestination.Items.Add(bacGiang.provinceName);
+
             Graphics graph = southMap.CreateGraphics();
             for (int i = 0; i < Provinces.Count; i++)
             {
@@ -78,23 +77,26 @@ namespace Dijkstra
                 g.listPoints.Add(Provinces[i].getPoint());
                 g.AddVertices(Provinces[i].getName());
             }
-            g.InsertEdge("Tây Ninh", "Bình Phước", 111);
-            g.InsertEdge("Vũng Tàu", "Bình Phước", 182);
-            g.InsertEdge("Sài Gòn", "Bình Phước", 124);
-            g.InsertEdge("Vũng Tàu", "Sài Gòn", 98);
-            g.InsertEdge("Tiền Giang", "Sài Gòn", 72);
-            g.InsertEdge("An Giang", "Sài Gòn", 235);
-            g.InsertEdge("Tây Ninh", "Sài Gòn", 92);
-            g.InsertEdge("Trà Vinh", "Sài Gòn", 125);
-            g.InsertEdge("Trà Vinh", "Cà Mau", 195);
-            g.InsertEdge("Trà Vinh", "Hậu Giang", 124);
-            g.InsertEdge("Tiền Giang", "An Giang", 174);
-            g.InsertEdge("Trà Vinh", "Tiền Giang", 68);
-            g.InsertEdge("An Giang", "Trà Vinh", 187);
-            g.InsertEdge("Hậu Giang", "Cà Mau", 130);
-            g.InsertEdge("Cà Mau", "Kiên Giang", 106);
-            g.InsertEdge("An Giang", "Hậu Giang", 146);
-            g.InsertEdge("An Giang", "Kiên Giang", 96);
+
+            g.InsertEdge("Hà Giang", "Cao Bằng", 136);
+            g.InsertEdge("Cao Bằng", "Lạng Sơn", 95);
+            g.InsertEdge("Lạng Sơn", "Bắc Giang", 62);
+            g.InsertEdge("Bắc Giang", "Quảng Ninh", 76);
+            g.InsertEdge("Quảng Ninh", "Hải Phòng", 77);
+            g.InsertEdge("Hải Phòng", "Nam Định", 77); 
+            g.InsertEdge("Nam Định", "Hà Nội", 90);
+            g.InsertEdge("Hà Nội", "Hải Phòng", 82);
+            g.InsertEdge("Bắc Giang", "Hà Nội", 90); 
+            g.InsertEdge("Hà Nội", "Bắc Kạn", 70);
+            g.InsertEdge("Hà Nội", "Phú Thọ", 136);
+            g.InsertEdge("Phú Thọ", "Tuyên Quang", 101);
+            g.InsertEdge("Tuyên Quang", "Hà Giang", 76);
+            g.InsertEdge("Bắc Kạn", "Hà Giang", 109);
+            g.InsertEdge("Bắc Kạn", "Tuyên Quang", 60);
+            g.InsertEdge("Bắc Kạn", "Cao Bằng", 53);
+            g.InsertEdge("Bắc Kạn", "Phú Thọ", 134);
+            g.InsertEdge("Bắc Kạn", "Lạng Sơn", 92);
+
         }
         //Vẽ bản đồ ra Panel
         private void southMap_Paint(object creator, PaintEventArgs e)
@@ -111,23 +113,24 @@ namespace Dijkstra
         }
         private void DrawLine() 
         {
-            DrawLine("Tây Ninh", "Bình Phước");
-            DrawLine("Vũng Tàu", "Bình Phước");
-            DrawLine("Sài Gòn", "Bình Phước");
-            DrawLine("Vũng Tàu", "Sài Gòn");
-            DrawLine("Tiền Giang", "Sài Gòn");
-            DrawLine("An Giang", "Sài Gòn");
-            DrawLine("Tây Ninh", "Sài Gòn");
-            DrawLine("Trà Vinh", "Sài Gòn");
-            DrawLine("Trà Vinh", "Cà Mau");
-            DrawLine("Trà Vinh", "Hậu Giang");
-            DrawLine("Tiền Giang", "An Giang");
-            DrawLine("Trà Vinh", "Tiền Giang");
-            DrawLine("An Giang", "Trà Vinh");
-            DrawLine("Hậu Giang", "Cà Mau");
-            DrawLine("Cà Mau", "Kiên Giang");
-            DrawLine("An Giang", "Hậu Giang");
-            DrawLine("An Giang", "Kiên Giang");
+            DrawLine("Hà Giang", "Cao Bằng");
+            DrawLine("Cao Bằng", "Lạng Sơn");
+            DrawLine("Lạng Sơn", "Bắc Giang");
+            DrawLine("Bắc Giang", "Quảng Ninh");
+            DrawLine("Quảng Ninh", "Hải Phòng");
+            DrawLine("Hải Phòng", "Nam Định");
+            DrawLine("Nam Định", "Hà Nội");
+            DrawLine("Hà Nội", "Hải Phòng");
+            DrawLine("Bắc Giang", "Hà Nội");
+            DrawLine("Hà Nội", "Bắc Kạn");
+            DrawLine("Hà Nội", "Phú Thọ");
+            DrawLine("Phú Thọ", "Tuyên Quang");
+            DrawLine("Tuyên Quang", "Hà Giang");
+            DrawLine("Bắc Kạn", "Hà Giang");
+            DrawLine("Bắc Kạn", "Tuyên Quang");
+            DrawLine("Bắc Kạn", "Cao Bằng");
+            DrawLine("Bắc Kạn", "Phú Thọ");
+            DrawLine("Bắc Kạn", "Lạng Sơn");
         }
         private void DrawLine(string a, string b)
         {
@@ -194,5 +197,7 @@ namespace Dijkstra
             Point point2 = new Point(g.pathIndex[i + 1].X, g.pathIndex[i + 1].Y);
             graph.DrawLine(p, point1, point2);
         }
+
+        
     }
 }

@@ -300,7 +300,7 @@
             this.southMap.BackgroundImage = global::Dijkstra.Properties.Resources.Ban_do_mien_Bac_dang_PNG;
             this.southMap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.southMap.Image = global::Dijkstra.Properties.Resources.Ban_do_mien_Bac_dang_PNG;
-            this.southMap.Location = new System.Drawing.Point(82, -20);
+            this.southMap.Location = new System.Drawing.Point(156, -40);
             this.southMap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.southMap.Name = "southMap";
             this.southMap.Size = new System.Drawing.Size(481, 550);
