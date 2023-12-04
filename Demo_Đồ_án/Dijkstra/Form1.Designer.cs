@@ -95,23 +95,7 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "List of Provinces/Cities in South Vietnam";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lvListProvinces
-            // 
-            this.lvListProvinces.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.clPoint,
-            this.clName});
-            this.lvListProvinces.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvListProvinces.GridLines = true;
-            this.lvListProvinces.HideSelection = false;
-            this.lvListProvinces.Location = new System.Drawing.Point(4, 63);
-            this.lvListProvinces.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.lvListProvinces.Name = "lvListProvinces";
-            this.lvListProvinces.Size = new System.Drawing.Size(960, 656);
-            this.lvListProvinces.TabIndex = 3;
-            this.lvListProvinces.UseCompatibleStateImageBehavior = false;
-            this.lvListProvinces.View = System.Windows.Forms.View.Details;
-            // 
+            //  
             // clPoint
             // 
             this.clPoint.Text = "Point";
@@ -131,7 +115,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(838, 46);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Một phần bản đồ miền Bắc Việt Nam";
+            this.label2.Text = "Bản Đồ miền Đông Bắc Việt Nam";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cbSource
@@ -192,7 +176,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(28, 124);
+            this.label4.Location = new System.Drawing.Point(28, 123);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(390, 55);
@@ -203,7 +187,7 @@
             // 
             this.tbPath.BackColor = System.Drawing.SystemColors.Menu;
             this.tbPath.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPath.Location = new System.Drawing.Point(282, 496);
+            this.tbPath.Location = new System.Drawing.Point(282, 483);
             this.tbPath.Margin = new System.Windows.Forms.Padding(4);
             this.tbPath.Name = "tbPath";
             this.tbPath.ReadOnly = true;
@@ -214,7 +198,7 @@
             // 
             this.tbKM.BackColor = System.Drawing.SystemColors.Menu;
             this.tbKM.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbKM.Location = new System.Drawing.Point(282, 306);
+            this.tbKM.Location = new System.Drawing.Point(282, 299);
             this.tbKM.Margin = new System.Windows.Forms.Padding(4);
             this.tbKM.Name = "tbKM";
             this.tbKM.ReadOnly = true;
@@ -224,7 +208,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(28, 398);
+            this.label7.Location = new System.Drawing.Point(28, 391);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(228, 55);
@@ -234,7 +218,7 @@
             // lable12
             // 
             this.lable12.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lable12.Location = new System.Drawing.Point(28, 309);
+            this.lable12.Location = new System.Drawing.Point(28, 302);
             this.lable12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lable12.Name = "lable12";
             this.lable12.Size = new System.Drawing.Size(358, 55);
@@ -256,7 +240,7 @@
             // 
             this.tbCost.BackColor = System.Drawing.SystemColors.Menu;
             this.tbCost.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCost.Location = new System.Drawing.Point(282, 395);
+            this.tbCost.Location = new System.Drawing.Point(282, 388);
             this.tbCost.Margin = new System.Windows.Forms.Padding(4);
             this.tbCost.Name = "tbCost";
             this.tbCost.ReadOnly = true;
@@ -266,7 +250,7 @@
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(28, 496);
+            this.label8.Location = new System.Drawing.Point(28, 482);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(215, 55);
@@ -276,7 +260,7 @@
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(28, 212);
+            this.label9.Location = new System.Drawing.Point(28, 215);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(390, 55);

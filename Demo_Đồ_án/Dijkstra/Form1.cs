@@ -107,7 +107,7 @@ namespace Dijkstra
                 SolidBrush brush = new SolidBrush(Color.SeaGreen);
                 Brush pointName = new SolidBrush(Color.White);
                 graph.FillEllipse(brush, Provinces[i].getPoint().X - 3, Provinces[i].getPoint().Y - 2, 18, 18);
-                graph.DrawString(Provinces[i].getVerticesName(), new Font("Arial", 8), pointName, Provinces[i].getPoint().X, Provinces[i].getPoint().Y);
+                graph.DrawString(Provinces[i].getVerticesName(), new Font("Arial", 10), pointName, Provinces[i].getPoint().X, Provinces[i].getPoint().Y);
             }
             DrawLine();
         }
@@ -137,11 +137,11 @@ namespace Dijkstra
             Graphics graph = southMap.CreateGraphics();
             int x = g.GetIndex(a);
             int y = g.GetIndex(b);
-            Pen p = new Pen(Color.Black, 2);
+            Pen p = new Pen(Color.SaddleBrown, 2);
             Point point1 = new Point(g.listPoints[x].X, g.listPoints[x].Y);
             Point point2 = new Point(g.listPoints[y].X, g.listPoints[y].Y);
             graph.DrawLine(p, point1, point2);
-            graph.DrawString($"{g.adjacency[x, y]}", new Font("Fira Code", 10), Brushes.Black, new Point((point1.X + point2.X) / 2 - 8, (point1.Y + point2.Y) / 2 + 8));
+            graph.DrawString($"{g.adjacency[x, y]}", new Font("Fira Code", 11), Brushes.Black, new Point((point1.X + point2.X) / 2 - 20, (point1.Y + point2.Y) / 2 + 8));
         }
         private void cbSource_SelectedIndexChanged(object creator, EventArgs e)
         {
@@ -197,7 +197,5 @@ namespace Dijkstra
             Point point2 = new Point(g.pathIndex[i + 1].X, g.pathIndex[i + 1].Y);
             graph.DrawLine(p, point1, point2);
         }
-
-        
     }
 }
