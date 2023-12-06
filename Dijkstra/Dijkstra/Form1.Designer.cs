@@ -234,7 +234,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1664, 870);
             this.panel2.TabIndex = 13;
-            this.panel2.UseWaitCursor = true;
             // 
             // lbInfo
             // 
@@ -349,7 +348,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.UseWaitCursor = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel3.ResumeLayout(false);

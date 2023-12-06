@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dijkstra", "Dijkstra\Dijkstra.csproj", "{9C215884-6177-4D27-9584-5E4965BE0B4F}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupDijkstra", "SetupDijkstra\SetupDijkstra.vdproj", "{4681FF68-014E-4A17-B57C-52D98813D6A1}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupDijkstra", "SetupDijkstra\SetupDijkstra.vdproj", "{58B3AC87-5B5D-4BDC-8AAB-DACA46596080}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{9C215884-6177-4D27-9584-5E4965BE0B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C215884-6177-4D27-9584-5E4965BE0B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C215884-6177-4D27-9584-5E4965BE0B4F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4681FF68-014E-4A17-B57C-52D98813D6A1}.Debug|Any CPU.ActiveCfg = Debug
-		{4681FF68-014E-4A17-B57C-52D98813D6A1}.Release|Any CPU.ActiveCfg = Release
+		{58B3AC87-5B5D-4BDC-8AAB-DACA46596080}.Debug|Any CPU.ActiveCfg = Debug
+		{58B3AC87-5B5D-4BDC-8AAB-DACA46596080}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
