@@ -121,7 +121,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(390, 55);
             this.label10.TabIndex = 13;
-            this.label10.Text = "20000 VND/litre";
+            this.label10.Text = "20.000 VND/litre";
             // 
             // label4
             // 
@@ -234,6 +234,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1664, 870);
             this.panel2.TabIndex = 13;
+            this.panel2.UseWaitCursor = true;
             // 
             // lbInfo
             // 
@@ -346,7 +347,9 @@
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.UseWaitCursor = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel3.ResumeLayout(false);
