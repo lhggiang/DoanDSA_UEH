@@ -222,7 +222,6 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.lbInfo);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.label6);
@@ -230,7 +229,7 @@
             this.panel2.Controls.Add(this.cbSource);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(0, -13);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1664, 870);
             this.panel2.TabIndex = 13;
@@ -340,15 +339,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Ivory;
-            this.ClientSize = new System.Drawing.Size(1649, 840);
+            this.ClientSize = new System.Drawing.Size(1629, 793);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
